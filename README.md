@@ -8,3 +8,5 @@ A Discord Bot that encrypts messages using OpenSSL.
 Sending !encry [text to be encrypted] will send an encrypted, base64-encoded text file.
 Example: !encry hello
 If you send !dcry [the contents of the text file sent by encryption] or !dcry (attach the text file sent by encryption), the decrypted text will be sent.
+<br>
+~~英語でREADMEかくのめんどい~~
