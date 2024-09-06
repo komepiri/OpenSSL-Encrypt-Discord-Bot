@@ -1,7 +1,7 @@
 # OpenSSL-Encrypt-Discord-Bot
 A Discord Bot that encrypts messages using OpenSSL.
 # Modules required for operation
-- Discord.js v14
+- Discord.js@14.13.0
 - Child-process
 - Node-fetch@2.6.0
 # How to use
