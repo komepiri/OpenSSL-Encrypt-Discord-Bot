@@ -23,7 +23,8 @@ const encryptedFilePath = path.join(__dirname, 'encrypted_temp.txt');
 const decryptedFilePath = path.join(__dirname, 'decrypted.txt');
 
 // OpenSSLで使用する暗号化キー
-const encryptionKey = 'openssl';
+// 適当な文字列に置き換えてください
+const encryptionKey = 'YOUR_ENCRYPTION_KEY';
 
 client.on('messageCreate', async (message) => {
     // 暗号化処理
