@@ -3,6 +3,7 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 global.fetch = require('node-fetch');
+require('dotenv').config();
 
 const client = new Client({
   intents: [
@@ -23,8 +24,7 @@ const encryptedFilePath = path.join(__dirname, 'encrypted_temp.txt');
 const decryptedFilePath = path.join(__dirname, 'decrypted.txt');
 
 // OpenSSLで使用する暗号化キー
-// 適当な文字列に置き換えてください
-const encryptionKey = 'YOUR_ENCRYPTION_KEY';
+const encryptionKey = 'openssl';
 
 client.on('messageCreate', async (message) => {
     // 暗号化処理
@@ -149,4 +149,4 @@ client.on('messageCreate', async (message) => {
     }
 });
 
-client.login("TOKEN");
+client.login(process.env.TOKEN);
